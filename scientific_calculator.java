@@ -90,9 +90,17 @@ class TopButtons extends JPanel {
         setLayout(null);
         // setLayout(new GridLayout(1, 4, 5, 5)); // 1 row, 4 columns
 
-        
+
         innerTop1 innerTop1 = new innerTop1();
         add(innerTop1);
+
+        innerTop2 innerTop2 = new innerTop2();
+        add(innerTop2);
+
+        innerTop3 innerTop3 = new innerTop3();
+        add(innerTop3);
+
+
 
         // inerTopButtons innerTop2 = new inerTopButtons();
         // add(innerTop2);
@@ -123,8 +131,78 @@ class innerTop1 extends JPanel{
         setBackground(Color.BLUE);
         setLayout(null);
 
+        JButton shift = new JButton("shift");
+        shift.setBounds(5,10, 57, 30);
+        add(shift);
+
+        JButton alpha = new JButton("alpha");
+        alpha.setBounds(72,10, 57, 30);
+        add(alpha);
+
+        JButton calc = new JButton("CALC");
+        calc.setBounds(5,60, 57, 30);
+        add(calc);
+
+        JButton f = new JButton("f");
+        f.setBounds(72,60, 57, 30);
+        add(f);
+
+
+
     }
 }
+//inner top buttons (middle 4 buttons)
+class innerTop2 extends JPanel{
+    public innerTop2(){
+        setBounds(135, 0,135 , 100);
+        setBackground(Color.black);
+        setLayout(null);
+
+        JButton shift = new JButton("a");
+        shift.setBounds(5,10, 57, 30);
+        add(shift);
+
+        JButton alpha = new JButton("alpha");
+        alpha.setBounds(72,10, 57, 30);
+        add(alpha);
+
+        JButton calc = new JButton("CALC");
+        calc.setBounds(5,60, 57, 30);
+        add(calc);
+
+        JButton f = new JButton("f");
+        f.setBounds(72,60, 57, 30);
+        add(f);
+    }
+
+}
+//inner top buttons (right side 4 buttons)
+class innerTop3 extends JPanel{
+    public innerTop3(){
+        setBounds(270, 0,136 , 100);
+        setBackground(Color.pink);
+        setLayout(null);
+
+        JButton shift = new JButton("shift");
+        shift.setBounds(5,10, 57, 30);
+        add(shift);
+
+        JButton alpha = new JButton("alpha");
+        alpha.setBounds(72,10, 57, 30);
+        add(alpha);
+
+        JButton calc = new JButton("CALC");
+        calc.setBounds(5,60, 57, 30);
+        add(calc);
+
+        JButton f = new JButton("f");
+        f.setBounds(72,60, 57, 30);
+        add(f);
+
+    }
+}
+
+
 
 
 
