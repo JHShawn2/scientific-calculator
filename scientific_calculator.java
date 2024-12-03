@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Update_02 {
+public class scientific_calculator {
 public static void main(String[] args) {
         new CalculatorFrame(); // Create the main frame
     }
